@@ -12,9 +12,9 @@ public class Livro implements Publicacao{
     
     /* Métodos */
     
-    public Livro(String titulo, String autor, int totalPg)
+    public Livro(String titulo, String autor, int totalPg, Pessoa leitor)
     {
-        leitor = null;
+        this.setLeitor(leitor);
         this.setTitulo(titulo);
         this.setAutor(autor);
         this.setTotPaginas(totalPg);
@@ -24,7 +24,7 @@ public class Livro implements Publicacao{
     public void detalhes()
     {
         System.out.println("-------------------------");
-        System.out.print("O autor(a) "+this.getAutor() + " está lendo o livro ");
+        System.out.print("O autor(a) "+this.leitor.getNome() + " está lendo o livro ");
         System.out.print(this.getTitulo() + ", do(a) autor(a)" +this.getAutor());
         System.out.print(", atualmente na página " +this.getPagAtual() + " de um total de ");
         System.out.println(this.getTotPaginas() + " páginas.");
@@ -42,8 +42,8 @@ public class Livro implements Publicacao{
     }
 
     @Override
-    public void folhear() {
-        this.avancarPag();
+    public void folhear(int p) {
+        this.pagAtual = p;
     }
 
     @Override
