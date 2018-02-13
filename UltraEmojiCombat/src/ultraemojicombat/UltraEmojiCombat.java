@@ -16,6 +16,15 @@ public class UltraEmojiCombat {
      */
     public static void main(String[] args) {
         
+        /*
+        // Outra forma de fazer
+        
+        Lutador[] lutadores = new Lutador[6];
+        lutadores[0] = new Lutador{"Pretty boy", "França", 31, 1.75f, 68.9f, 11, 3, 1);
+        
+        
+        */
+        
         Lutador[] lutadores = new Lutador[]{
         new Lutador("Pretty boy","França",31,1.75f,68.9f,11,3,1),
         new Lutador("Putscript","Brasil",29,1.68f,57.8f,14,2,3),
@@ -24,24 +33,35 @@ public class UltraEmojiCombat {
         new Lutador("Whindersson","Brasólia",21,1.74f,111.63f,0,15,1)
     };
         
+        Luta MMA = new Luta();
         
-        lutadores[0].apresentar();
-        lutadores[0].ganharLuta();
-        lutadores[0].ganharLuta();
-        lutadores[0].ganharLuta();
-        lutadores[0].ganharLuta();
-        lutadores[0].ganharLuta();
-        lutadores[0].perderLuta();
-        lutadores[0].perderLuta();
-        lutadores[0].perderLuta();
-        lutadores[0].perderLuta();
-        lutadores[0].perderLuta();
-        lutadores[0].empatarLuta();
-        lutadores[0].empatarLuta();
-        lutadores[0].apresentar();
+        
+//        lutadores[0].apresentar();
+//        lutadores[0].ganharLuta();
+//        lutadores[0].ganharLuta();
+//        lutadores[0].ganharLuta();
+//        lutadores[0].ganharLuta();
+//        lutadores[0].ganharLuta();
+//        lutadores[0].perderLuta();
+//        lutadores[0].perderLuta();
+//        lutadores[0].perderLuta();
+//        lutadores[0].perderLuta();
+//        lutadores[0].perderLuta();
+//        lutadores[0].empatarLuta();
+//        lutadores[0].empatarLuta();
+//        lutadores[0].apresentar();
+//        lutadores[0].status();
+//        lutadores[3].status();        
+//        lutadores[4].status();
+
         lutadores[0].status();
-        lutadores[3].status();        
-        lutadores[4].status();
+        lutadores[1].status();
+        
+        MMA.marcarLuta(lutadores[0], lutadores[1]);
+        MMA.Lutar();
+        
+        lutadores[0].status();
+        lutadores[1].status();
         
     }
     
