@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ultraemojicombat;
 
 /**
@@ -17,12 +13,11 @@ public class UltraEmojiCombat {
     public static void main(String[] args) {
         
         /*
-        // Outra forma de fazer
+        // Outra forma de fazer é a seguinte:
+        // Another way to do this is the following:
         
         Lutador[] lutadores = new Lutador[6];
         lutadores[0] = new Lutador{"Pretty boy", "França", 31, 1.75f, 68.9f, 11, 3, 1);
-        
-        
         */
         
         Lutador[] lutadores = new Lutador[]{
@@ -35,24 +30,25 @@ public class UltraEmojiCombat {
         
         Luta MMA = new Luta();
         
-        
-//        lutadores[0].apresentar();
-//        lutadores[0].ganharLuta();
-//        lutadores[0].ganharLuta();
-//        lutadores[0].ganharLuta();
-//        lutadores[0].ganharLuta();
-//        lutadores[0].ganharLuta();
-//        lutadores[0].perderLuta();
-//        lutadores[0].perderLuta();
-//        lutadores[0].perderLuta();
-//        lutadores[0].perderLuta();
-//        lutadores[0].perderLuta();
-//        lutadores[0].empatarLuta();
-//        lutadores[0].empatarLuta();
-//        lutadores[0].apresentar();
-//        lutadores[0].status();
-//        lutadores[3].status();        
-//        lutadores[4].status();
+        /* To test if the setter methods are working properly
+        lutadores[0].apresentar();
+        lutadores[0].ganharLuta();
+        lutadores[0].ganharLuta();
+        lutadores[0].ganharLuta();
+        lutadores[0].ganharLuta();
+        lutadores[0].ganharLuta();
+        lutadores[0].perderLuta();
+        lutadores[0].perderLuta();
+        lutadores[0].perderLuta();
+        lutadores[0].perderLuta();
+        lutadores[0].perderLuta();
+        lutadores[0].empatarLuta();
+        lutadores[0].empatarLuta();
+        lutadores[0].apresentar();
+        lutadores[0].status();
+        lutadores[3].status();        
+        lutadores[4].status();
+        */
 
         lutadores[0].status();
         lutadores[1].status();
@@ -66,3 +62,5 @@ public class UltraEmojiCombat {
     }
     
 }
+
+/////////////////////// EOF ////////////////////////////

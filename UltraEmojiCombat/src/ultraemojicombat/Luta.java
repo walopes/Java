@@ -98,7 +98,6 @@ public class Luta {
     public void setDesafiante(Lutador desafiante) {
         this.desafiante = desafiante;
     }
-    
-    
-    
 }
+
+////////////////////////// EOF //////////////////////////////
