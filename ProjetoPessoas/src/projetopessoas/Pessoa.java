@@ -7,20 +7,19 @@ package projetopessoas;
  */
 public class Pessoa {
     
-    /* Atributos */
-    
+    /* Atributos */    
     private String nome, sexo;
     private int idade;
     
     
     /* Metodos */
     
-    public Pessoa(String nome, String sexo, int idade)
-    {
-        this.setIdade(idade);
-        this.setSexo(sexo);
-        this.setNome(nome);
-    }
+//    public Pessoa(String nome, String sexo, int idade)
+//    {
+//        this.setIdade(idade);
+//        this.setSexo(sexo);
+//        this.setNome(nome);
+//    }
     
     public void fazerAniversario()
     {
@@ -49,6 +48,11 @@ public class Pessoa {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" + "nome=" + nome + ", sexo=" + sexo + ", idade=" + idade + '}';
     }
     
     
