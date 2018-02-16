@@ -8,24 +8,43 @@ public class Relations {
 
     public static void main(String[] args) throws ParseException {
         
-        Pessoa[] pessoas = new Pessoa[2];
-        Livro[] livros = new Livro[3];
+        // Pessoa p1 = new Pessoa(); // Errado - nao pode ser instanciada
+        /* 
+        Visitante v1 = new Visitante();
+        v1.setNome("Juvenal");
+        v1.setIdade(22);
+        v1.setSexo('M');
+        System.out.println(v1.toString()); */
         
-        pessoas[0] = new Pessoa("Pedro",'M',22);
-        pessoas[1] = new Pessoa("Luisa",'F',19);
+        Aluno a1 = new Aluno();
+        a1.setNome("Claudinéia");
+        a1.setCurso("Informática");
+        a1.setIdade(16);
+        a1.setSexo('M');
+        a1.setMatricula(14987);
+        a1.pagarMensalidade();
         
-        livros[0] = new Livro("Abarat", "Clive Baker",345,pessoas[0]);
-        livros[1] = new Livro("Frankenstein", "Mary Shelley",188,pessoas[1]);
-        livros[2] = new Livro("Drácula", "Bram Stocker",382,pessoas[1]);
+        Bolsista b1 = new Bolsista();
+        b1.setNome("Carlão");
+        b1.setMatricula(11487);
+        b1.setBolsa(12.75f);
+        b1.setSexo('M');
+        b1.pagarMensalidade(); 
         
-        livros[0].detalhes();
-        livros[1].detalhes();
-        livros[1].folhear(74);
-        livros[1].avancarPag();
-        livros[1].detalhes();
-        livros[2].detalhes();
+        Professor p = new Professor("matemática");
+        p.setNome("Rolando da Rocha");
+        p.setIdade(34);
+        p.setSalario(3534.5f);
+        p.receberAumento(2000);
+        System.out.println(p.toString());
         
-        //pessoas[0].verificaIdade("23 de maio de 1993");
+        Tecnico T = new Tecnico();
+        T.setCurso("Informática");
+        T.setNome("Janus");
+        T.setMatricula(4874);
+        T.setIdade(72);
+        T.setSexo('M');
+        System.out.println(T.toString());
         
     }
     
